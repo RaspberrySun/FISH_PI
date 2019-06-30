@@ -17,25 +17,41 @@ pwm.set_pwm_freq(50)
  
 print 'Moving servo on channel x, press Ctrl-C to quit...'
 
-def forward():
-	set_servo_angle(4, 160)
-	time.sleep(0.5)
-	set_servo_angle(4, 30)
-	time.sleep(0.5)
+def forward_fast():
+	set_servo_angle(15, 160)
+	time.sleep(0.3)
+	set_servo_angle(15, 30)
+	time.sleep(0.3)
 
+def forward_middle():
+	set_servo_angle(15, 50)
+	time.sleep(0.25)
+	set_servo_angle(15, 140)
+	time.sleep(0.25)
+
+def turn_right_low():
+	set_servo_angle(15, 55)
+	time.sleep(0.4)
+	set_servo_angle(15, 95)
+	time.sleep(0.4)
 
 def turn_right():
-	set_servo_angle(4, 30)
-	time.sleep(0.5)
-	set_servo_angle(4, 95)
-	time.sleep(0.5)
+	set_servo_angle(15, 30)
+	time.sleep(0.4)
+	set_servo_angle(15, 95)
+	time.sleep(0.4)
 
+def turn_left_low():
+	set_servo_angle(15, 135)
+	time.sleep(0.4)
+	set_servo_angle(15, 95)
+	time.sleep(0.4)
 
 def turn_left():
-	set_servo_angle(4, 160)
-	time.sleep(0.5)
-	set_servo_angle(4, 95)
-	time.sleep(0.5)
+	set_servo_angle(15, 160)
+	time.sleep(0.4)
+	set_servo_angle(15, 95)
+	time.sleep(0.4)
 
-if __name__ = "__main__":
-	set_servo_angle(4, 95)
+if __name__ == "__main__":
+	forward()

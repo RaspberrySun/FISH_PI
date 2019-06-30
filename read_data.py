@@ -36,4 +36,5 @@ def read_data6():
 		return 1
 
 if __name__ == "__main__":
-	print [read_data1(), read_data2(), read_data3(), read_data4(), read_data5(), read_data6()]
+	while 1:
+		print [read_data1(), read_data2(), read_data3(), read_data4(), read_data5(), read_data6()]
