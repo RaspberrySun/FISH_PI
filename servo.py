@@ -37,4 +37,5 @@ def turn_left():
 	set_servo_angle(4, 95)
 	time.sleep(0.5)
 
-set_servo_angle(4, 95)
+if __name__ = "__main__":
+	set_servo_angle(4, 95)
