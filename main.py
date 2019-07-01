@@ -4,7 +4,7 @@ set_servo_angle(15, 95)
 while 1:
 	try:
 		if read_data2() and read_data3():
-			forward()
+			forward_middle()
 			
 		if read_data2() and read_data3()==0:
 			turn_right_low()
